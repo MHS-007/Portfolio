@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+    <title>My Portfolio Website</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <ul>
+            <span class="logo-head">My Portfolio</span>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="intro">
+        <p class="greetings">Hello, World.</p>
+        <p class="name">I'm Maaz Ahmed Siddiqui.</p>
+        <span class="role">| Full-Stack Developer | UI/UX Designer |</span>
+        <a class="about-link" href="#about">More About Me</a>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100081024199289" class="icon-link"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/MaazSid07229255" class="icon-link"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/maazsiddiqui_3000/" class="icon-link"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/maaz-siddiqui-01592520b/"" class="icon-link"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/MHS-007" class="icon-link"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="about-me" id="about">
+        <span class="about-heading">ABOUT</span>
+        <p class="intro-heading">Let me introduce myself.</p>
+        <img src="myImage.jpeg" alt="my picture">
+        <p class="my-intro">Hi there, I'm <span>Maaz Siddiqui</span>, a passionate individual in the field of web development. I am currently dedicated to <span>honing</span> my skills and knowledge. My ultimate <span>goal</span> is to become a versatile full-stack developer, equipped with expertise in both front-end and back-end development, and to create innovative and user-friendly <span>web solutions</span> that make a <span>positive impact</span> in the digital world.</p>
+        <button class="download-button" id="downloadButton">
+            <i class="fas fa-download"></i> DOWNLOAD CV
+        </button>
+        <button class="hire-button" id="hire-button"><i class="fas fa-user-plus"></i> HIRE ME</button>
+    </div>
+
+    <div class="contact-me" id="contact">
+        <span class="contact-heading">Contact</span>
+        <p class="connect">Let's Connect</p>
+        <p class="line">Ready to embark on an exciting digital journey together? Don't hesitate to reach out!</p>
+        <form id="contact-form" action="submission.html">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="1" style="overflow:hidden;" required></textarea>
+            </div>
+            
+            <button class="submission" type="submit">Submit</button>
+        </form>
+        <p class="copyright">&copy; 2023 Maaz Siddiqui. All Rights Reserved.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
